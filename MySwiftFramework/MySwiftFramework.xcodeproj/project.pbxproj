@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F842B9B519EC448300170692 /* MySwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = F842B9B419EC448300170692 /* MySwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F842B9BF19EC448300170692 /* MySwiftFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842B9BE19EC448300170692 /* MySwiftFrameworkTests.swift */; };
+		F842B9C919EC45FD00170692 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842B9C819EC45FD00170692 /* MyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		F842B9BA19EC448300170692 /* MySwiftFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySwiftFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F842B9BD19EC448300170692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F842B9BE19EC448300170692 /* MySwiftFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftFrameworkTests.swift; sourceTree = "<group>"; };
+		F842B9C819EC45FD00170692 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				F842B9B419EC448300170692 /* MySwiftFramework.h */,
 				F842B9B219EC448300170692 /* Supporting Files */,
+				F842B9C819EC45FD00170692 /* MyViewController.swift */,
 			);
 			path = MySwiftFramework;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F842B9C919EC45FD00170692 /* MyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 		F842B9C319EC448300170692 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -307,12 +312,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F842B9C419EC448300170692 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
