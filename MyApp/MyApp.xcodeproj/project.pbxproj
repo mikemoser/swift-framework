@@ -13,6 +13,7 @@
 		F842B9E019EC46C500170692 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F842B9DF19EC46C500170692 /* Images.xcassets */; };
 		F842B9E319EC46C500170692 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F842B9E119EC46C500170692 /* LaunchScreen.xib */; };
 		F842B9EF19EC46C500170692 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F842B9EE19EC46C500170692 /* MyAppTests.swift */; };
+		F842BA0119EC482C00170692 /* MySwiftFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F842B9FE19EC473600170692 /* MySwiftFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F842BA0119EC482C00170692 /* MySwiftFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
