@@ -23,6 +23,20 @@
 			remoteGlobalIDString = F842B9D219EC46C500170692;
 			remoteInfo = MyApp;
 		};
+		F842B9FD19EC473600170692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F842B9F819EC473600170692 /* MySwiftFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F842B9AF19EC448300170692;
+			remoteInfo = MySwiftFramework;
+		};
+		F842B9FF19EC473600170692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F842B9F819EC473600170692 /* MySwiftFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F842B9BA19EC448300170692;
+			remoteInfo = MySwiftFrameworkTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +50,7 @@
 		F842B9E819EC46C500170692 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F842B9ED19EC46C500170692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F842B9EE19EC46C500170692 /* MyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTests.swift; sourceTree = "<group>"; };
+		F842B9F819EC473600170692 /* MySwiftFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MySwiftFramework.xcodeproj; path = ../../MySwiftFramework/MySwiftFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +92,7 @@
 		F842B9D519EC46C500170692 /* MyApp */ = {
 			isa = PBXGroup;
 			children = (
+				F842B9F819EC473600170692 /* MySwiftFramework.xcodeproj */,
 				F842B9D819EC46C500170692 /* AppDelegate.swift */,
 				F842B9DA19EC46C500170692 /* ViewController.swift */,
 				F842B9DC19EC46C500170692 /* Main.storyboard */,
@@ -110,6 +126,15 @@
 				F842B9ED19EC46C500170692 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F842B9F919EC473600170692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F842B9FE19EC473600170692 /* MySwiftFramework.framework */,
+				F842BA0019EC473600170692 /* MySwiftFrameworkTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +204,12 @@
 			mainGroup = F842B9CA19EC46C500170692;
 			productRefGroup = F842B9D419EC46C500170692 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F842B9F919EC473600170692 /* Products */;
+					ProjectRef = F842B9F819EC473600170692 /* MySwiftFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F842B9D219EC46C500170692 /* MyApp */,
@@ -186,6 +217,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F842B9FE19EC473600170692 /* MySwiftFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MySwiftFramework.framework;
+			remoteRef = F842B9FD19EC473600170692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F842BA0019EC473600170692 /* MySwiftFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MySwiftFrameworkTests.xctest;
+			remoteRef = F842B9FF19EC473600170692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F842B9D119EC46C500170692 /* Resources */ = {
